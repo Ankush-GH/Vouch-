@@ -1,0 +1,214 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 4rem;
+
+  .logo {
+    margin-left: 1rem;
+    margin-top: 1rem;
+
+    h3 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #00355b;
+
+      span {
+        color: orange;
+      }
+    }
+    @media (max-width: 500px) {
+      h3 {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .btns {
+    display: flex;
+
+    button {
+      margin: 0.5rem 1rem;
+      width: 12rem;
+      height: 3rem;
+      font-weight: 700;
+    }
+    @media (max-width: 500px) {
+      button {
+        display: none;
+      }
+    }
+
+    // .trial-btn {
+    //   font-weight: 600;
+    //   cursor: pointer;
+    //   margin: 0.5rem 1rem;
+    //   padding: 0.8rem 2rem;
+    //   height: 3rem;
+    //   width: 12rem;
+    //   border: none;
+    //   border-radius: 0.3rem;
+    //   background-color: #00355b;
+    //   color: white;
+    // }
+
+    // .login-btn {
+    //   font-weight: 600;
+    //   cursor: pointer;
+    //   margin-top: 0.5rem;
+    //   margin-right: 3rem;
+    //   color: white;
+    //   border-radius: 0.3rem;
+    //   padding: 0.8rem 4.5rem;
+    //   width: 12rem;
+    //   height: 3rem;
+    //   background-color: orange;
+    // }
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    margin-left: 2rem;
+    max-width: 25rem;
+    // background-color: green;
+  }
+}
+
+.login {
+  display: flex;
+  height: 90.4vh;
+
+  .left {
+    width: 35vw;
+
+    .loginform {
+      height: 90.5vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .heading {
+        h1 {
+          font-weight: 700;
+        }
+        @media (max-width: 500px) {
+          h1 {
+            font-size: 1.2rem;
+          }
+        }
+      }
+
+      h6 {
+        opacity: 0.6;
+        margin-bottom: 3rem;
+      }
+      @media (max-width: 500px) {
+        h6 {
+          font-size: x-small;
+        }
+      }
+
+      .input-email {
+        border: 0.0625rem solid rgba(185, 182, 182, 0.5);
+        -webkit-background-clip: padding-box; /* for Safari */
+        background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+        padding: 1rem;
+        margin: 1rem;
+        width: 22rem;
+        height: 3rem;
+      }
+      @media (max-width: 500px) {
+        .input-email {
+          width: 13rem;
+          height: 2.1rem;
+        }
+      }
+
+      .input-password {
+        border: 0.0625rem solid rgba(185, 182, 182, 0.5);
+        -webkit-background-clip: padding-box; /* for Safari */
+        background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+        padding: 1rem;
+        width: 22rem;
+        height: 3rem;
+      }
+      @media (max-width: 500px) {
+        .input-password {
+          width: 13rem;
+          height: 2.1rem;
+        }
+      }
+    }
+
+    .login-BTN {
+      font-weight: 700;
+      border: none;
+      margin: 1rem;
+      width: 22rem;
+      height: 3rem;
+      background-color: #00355b;
+      color: white;
+    }
+    @media (max-width: 500px) {
+      .login-BTN {
+        width: 13rem;
+        height: 2.1rem;
+      }
+    }
+
+    .bottom {
+      width: 22rem;
+      display: flex;
+      justify-content: space-between;
+
+      // .box {
+      //   font-weight: 500;
+      //   color: #00355b;
+      //   font-size: small;
+      //   display: flex;
+      //   align-items: center;
+
+      //   input {
+      //     margin-right: 0.3rem;
+      //   }
+      // }
+
+      @media (max-width: 500px) {
+        .form-check {
+          font-size: 7px;
+          font-weight: 700;
+          margin-left: 4.5rem;
+        }
+      }
+      .fpass {
+        font-weight: 500;
+        color: #00355b;
+        cursor: pointer;
+        font-size: medium;
+      }
+      @media (max-width: 500px) {
+        .fpass {
+          margin-right: 4.5rem;
+          font-size: 7px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    .left {
+      // padding: 1rem;
+      width: 100%;
+    }
+  }
+}
+img {
+  width: 65vw;
+}
+@media (max-width: 500px) {
+  img {
+    display: none;
+  }
+}
