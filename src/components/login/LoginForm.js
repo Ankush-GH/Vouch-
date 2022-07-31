@@ -3,7 +3,9 @@ import React, { useState } from "react";
 import axios from "axios";
 
 const LoginForm = () => {
+  // to handle the email input
   const [email, setEmail] = useState("");
+  // to handle the password input
   const [password, setPassword] = useState("");
 
   const emailHandler = (e) => {
@@ -24,11 +26,11 @@ const LoginForm = () => {
         password: password,
       })
       .then((res) => {
-        console.log(res.data);
-        alert("Successfully Logged In!! (check token on console)");
+        // console.log(res.data.token);
+        alert(`Your token is ${res.data.token}`);
       })
       .catch((err) => {
-        console.log(err.request.response);
+        // console.log(err.request.response);
         alert(err.request.response);
       });
   };
@@ -40,21 +42,6 @@ const LoginForm = () => {
           <h1>Welcome Back</h1>
         </div>
         <h6>Sub-title text goes here</h6>
-
-        {/* <div id="inputEmail" className="input-group mb-3 w-75">
-        <span className="input-group-text" id="basic-addon1">
-          @
-        </span>
-        <input
-          value={email}
-          onChange={emailHandler}
-          type="text"
-          className="form-control"
-          placeholder="Email Address*"
-          aria-label="Username"
-          aria-describedby="basic-addon1"
-        />
-      </div> */}
 
         <input
           value={email}
@@ -86,7 +73,7 @@ const LoginForm = () => {
             <label
               className="form-check-label"
               style={{ color: "#00355b" }}
-              for="flexCheckDefault"
+              htmlFor="flexCheckDefault"
             >
               Remember Password
             </label>
@@ -94,9 +81,6 @@ const LoginForm = () => {
           <div className="fpass">Forgot Password?</div>
         </div>
       </form>
-      {/* <div className="message">
-
-      </div> */}
     </>
   );
 };
